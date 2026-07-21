@@ -5,6 +5,29 @@
 
 ---
 
+## 🖼️ Visual Demo & Previews
+
+### 1. Delivery CV (`v2-modern` Editorial Layout)
+High-contrast monochrome typography with DIN Condensed headings, 5-col scope impact banner, and structured timeline dots.
+
+![CV Delivery Demo](assets/demo-cv-v2-modern.png)
+
+---
+
+### 2. Application Audit & Diagnostic Report (`report.html`)
+Automated diagnostic report tracking candidate positioning scores, XYZ bullet transformation matrices, and asset verification.
+
+![Audit Report Demo](assets/demo-report.png)
+
+---
+
+### 3. Alternative Classic Layout (`v1-classic.html`)
+2-column layout designed for dense technical backgrounds.
+
+![Classic CV Demo](assets/demo-cv-v1-classic.png)
+
+---
+
 ## 🌟 Features
 
 - 🔄 **5-Phase Engineering Pipeline:** Structured methodology from initial candidate research to final diagnostic audit report.

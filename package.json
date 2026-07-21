@@ -6,6 +6,7 @@
   "main": "scripts/export-pdf.mjs",
   "scripts": {
     "export:pdf": "node scripts/export-pdf.mjs",
+    "capture": "node scripts/capture-demo-images.mjs",
     "test": "node scripts/export-pdf.mjs"
   },
   "keywords": [
