@@ -3,55 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Audit Report — Candidate Name</title>
+    <title>CV Audit & Transformation Report — Alex Mercer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.cdnfonts.com/css/din-condensed" rel="stylesheet">
     <style>
         @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+        
         :root {
             --sf-rounded: ui-rounded, 'SF Pro Rounded', 'SF Pro Display', system-ui, -apple-system, sans-serif;
             --font-din: 'DIN Condensed', 'Impact', sans-serif;
         }
-        body { font-family: var(--sf-rounded); background-color: #ffffff; color: #000000; margin: 0; padding: 0; }
+
+        body {
+            font-family: var(--sf-rounded);
+            -webkit-font-smoothing: antialiased;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
         .font-din { font-family: var(--font-din); }
-        .border-card { border: 2px solid #000000; padding: 24px; background: #ffffff; }
-        .ds-table { width: 100%; border-collapse: collapse; border: 2px solid #000000; }
-        .ds-table th { background: #000000; color: #ffffff; font-family: var(--font-din); font-size: 26px; font-weight: 700; text-transform: uppercase; padding: 14px 20px; text-align: left; }
-        .ds-table td { border-bottom: 1px solid #e0e0e0; padding: 16px 20px; font-size: 22px; }
-        .tag-pill { display: inline-block; border: 2px solid #000000; padding: 4px 12px; font-size: 18px; font-weight: 600; text-transform: uppercase; }
-        @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+        .lh-67 { line-height: 67px; }
+        .lh-36 { line-height: 36px; }
+
+        .metric-card {
+            text-align: center;
+            padding: 16px 0;
+        }
+        .metric-value {
+            font-family: var(--font-din);
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1px;
+        }
+        .metric-label {
+            font-size: 17px;
+            opacity: 0.7;
+            margin-top: 6px;
+        }
+
+        .border-card {
+            border: 2px solid #000000;
+            padding: 24px;
+            background: #ffffff;
+        }
+
+        .left-accent-card {
+            border-left: 4px solid #000000;
+            border-top: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 24px;
+            background: #ffffff;
+        }
+
+        .fit-bar-bg {
+            width: 100%;
+            height: 6px;
+            background: #e0e0e0;
+            margin-top: 8px;
+        }
+        .fit-bar-fill {
+            height: 100%;
+            background: #000000;
+        }
+
+        .ds-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000000;
+        }
+        .ds-table th {
+            background: #000000;
+            color: #ffffff;
+            font-family: var(--font-din);
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 14px 20px;
+            text-align: left;
+        }
+        .ds-table td {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 16px 20px;
+            font-size: 22px;
+            color: #000000;
+        }
+        .ds-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tag-pill {
+            display: inline-block;
+            border: 2px solid #000000;
+            padding: 4px 12px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
     </style>
 </head>
 <body class="w-full min-h-screen">
-    <div class="w-full max-w-[1811px] mx-auto bg-[#ffffff]">
-        <header class="w-full bg-[#000000] px-[73px] py-[45px] text-white flex justify-between items-end">
-            <div>
-                <h1 class="text-[56px] font-din font-bold uppercase" style="line-height:1;">CV AUDIT & TRANSFORMATION REPORT</h1>
-                <h2 class="text-[30px] opacity-90 mt-2">Candidate: Firstname Lastname · Senior Product Designer</h2>
-            </div>
-            <div class="text-right text-[24px]">
-                <div>Audit Date: July 2026</div>
-                <div class="opacity-70 text-[20px]">Open-CV Pipeline Audit System</div>
+
+    <div class="w-full max-w-[1811px] mx-auto overflow-hidden bg-[#ffffff]">
+        
+        <!-- HEADER -->
+        <header class="w-full bg-[#000000] px-[73px] py-[45px]">
+            <div class="flex items-end justify-between">
+                <div>
+                    <h1 class="text-[#ffffff] text-[56px] font-[700] tracking-wide font-din uppercase lh-67" style="line-height: 1;">CV AUDIT & TRANSFORMATION REPORT</h1>
+                    <h2 class="text-[#ffffff] text-[30px] font-[400] lh-36 mt-[10px] opacity-90">Demo Candidate: Alex Mercer · Senior UX/UI Designer</h2>
+                </div>
+                <div class="text-right">
+                    <span class="text-[#ffffff] text-[24px] font-[400] block">Audit Date: July 2026</span>
+                    <span class="text-[#ffffff] text-[20px] font-[400] opacity-70 block mt-[4px]">Open-CV Pipeline Audit System</span>
+                </div>
             </div>
         </header>
 
+        <!-- METRICS BANNER -->
+        <div class="w-full bg-[#000000] px-[73px] pt-[5px] pb-[35px]">
+            <div class="grid grid-cols-5 gap-[20px] border-t border-[#333333] pt-[25px]">
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">9.4 / 10</div>
+                    <div class="metric-label text-[#ffffff]">Transformed Grade</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">10+ YRS</div>
+                    <div class="metric-label text-[#ffffff]">Overall Exp Re-Framed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">4 SURFACES</div>
+                    <div class="metric-label text-[#ffffff]">Scope Standardized</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">2 PAGES</div>
+                    <div class="metric-label text-[#ffffff]">PDF Strict Length</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">100% PASS</div>
+                    <div class="metric-label text-[#ffffff]">Playwright Audit</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REPORT BODY -->
         <div class="px-[73px] py-[50px] flex flex-col gap-[50px]">
+
+            <!-- EXECUTIVE SUMMARY SECTION -->
             <section class="border-b border-[#000000] pb-[40px]">
-                <h3 class="font-din text-[56px] font-bold uppercase mb-4">EXECUTIVE SUMMARY</h3>
-                <p class="text-[28px] leading-[42px]">
-                    Analysis of candidate positioning, key weaknesses resolved, and quantitative/qualitative transformation applied via the 5-phase CV pipeline.
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67 mb-[15px]">EXECUTIVE SUMMARY</h3>
+                <p class="text-[28px] font-[400] leading-[42px] max-w-[1650px] text-[#000000]">
+                    Audit and transformation overview for demo candidate Alex Mercer. Initial resume draft suffered from zero metrics, passive verb structures (e.g. <em>"assisted with"</em>, <em>"responsible for"</em>), and unoptimized positioning. Through the 5-phase CV pipeline, bullet points were restructured using Google's XYZ formula, scope indicators, and design system volume metrics.
                 </p>
             </section>
 
-            <section>
-                <h3 class="font-din text-[56px] font-bold uppercase mb-6">GENERATED ASSET REGISTRY</h3>
+            <!-- AUDIT COMPARISON GRID -->
+            <section class="flex flex-col gap-[30px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">DIAGNOSTIC AUDIT COMPARISON</h3>
+
+                <div class="grid grid-cols-2 gap-[40px]">
+                    
+                    <!-- BEFORE CARD -->
+                    <div class="border-card">
+                        <div class="flex items-center justify-between border-b border-[#000000] pb-[15px] mb-[20px]">
+                            <h4 class="font-din text-[36px] font-[700] uppercase">ORIGINAL DRAFT DIAGNOSTIC</h4>
+                            <span class="tag-pill bg-[#ffffff]">SCORE: 5.0 / 10</span>
+                        </div>
+                        <div class="fit-bar-bg mb-[25px]"><div class="fit-bar-fill" style="width: 50%;"></div></div>
+                        <ul class="flex flex-col gap-[14px] text-[24px] text-[#4E4B66]">
+                            <li>❌ <strong>Zero Metric Impact:</strong> Lacked quantitative results or scale indicators.</li>
+                            <li>❌ <strong>Passive Verbs:</strong> Relied on <em>"supported"</em>, <em>"assisted"</em>, <em>"responsible for"</em>.</li>
+                            <li>❌ <strong>Underplayed Scale:</strong> Failed to articulate multi-platform complexity.</li>
+                            <li>❌ <strong>Generic Profile:</strong> Boilerplate narrative without executive design leadership signal.</li>
+                        </ul>
+                    </div>
+
+                    <!-- AFTER CARD -->
+                    <div class="border-card bg-[#ffffff]">
+                        <div class="flex items-center justify-between border-b border-[#000000] pb-[15px] mb-[20px]">
+                            <h4 class="font-din text-[36px] font-[700] uppercase">TRANSFORMED CV DIAGNOSTIC</h4>
+                            <span class="tag-pill bg-[#ffffff]">SCORE: 9.4 / 10</span>
+                        </div>
+                        <div class="fit-bar-bg mb-[25px]"><div class="fit-bar-fill" style="width: 94%;"></div></div>
+                        <ul class="flex flex-col gap-[14px] text-[24px] text-[#000000]">
+                            <li>✓ <strong>Scope & Volume Metrics:</strong> 4 surfaces, 50+ DS tokens, 1M+ users.</li>
+                            <li>✓ <strong>FAANG Power Verbs:</strong> Re-framed with <em>"Engineered"</em>, <em>"Architected"</em>, <em>"Spearheaded"</em>.</li>
+                            <li>✓ <strong>Qualitative XYZ Formula:</strong> <code>[Power Verb] + [Design Action] → [Operational Result]</code>.</li>
+                            <li>✓ <strong>Senior Executive Summary:</strong> Direct positioning across POS, E-commerce, and Design Systems.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- TRANSFORMATION STRATEGY TABLE -->
+            <section class="flex flex-col gap-[25px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">TAILORING STRATEGY & BULLET TRANSFORMATION</h3>
+                
                 <table class="ds-table">
                     <thead>
                         <tr>
-                            <th>Asset Type</th>
-                            <th>File Location</th>
-                            <th>Status</th>
-                            <th>Verification</th>
+                            <th style="width: 25%;">Project / Role</th>
+                            <th style="width: 35%;">Original Draft (Weak)</th>
+                            <th style="width: 40%;">Transformed Bullet (Strong XYZ)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>POS Ecosystem</strong><br><span class="text-[#4E4B66] text-[18px]">Fintech Platform</span></td>
+                            <td class="text-[#4E4B66]">Supported the development and implementation of the design system...</td>
+                            <td><strong>Architected & standardized component Design System</strong> (50+ component variants & tokens), eliminating visual drift and accelerating developer velocity.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>E-Commerce Suite</strong><br><span class="text-[#4E4B66] text-[18px]">Consumer Platform</span></td>
+                            <td class="text-[#4E4B66]">Conceptualized UI, redesigned user experiences, and shipped user-friendly UIs...</td>
+                            <td><strong>Spearheaded mobile-first UX/UI redesign</strong>, modernizing consumer checkout and loyalty reward experiences across 1M+ active users.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- FILE REGISTRY TABLE -->
+            <section class="flex flex-col gap-[25px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">GENERATED ASSET REGISTRY</h3>
+                
+                <table class="ds-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Asset Type</th>
+                            <th style="width: 40%;">File Path</th>
+                            <th style="width: 20%;">Status</th>
+                            <th style="width: 20%;">Verification</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,24 +250,32 @@
                             <td><strong>Markdown Source</strong></td>
                             <td><code>templates/cv-template.md</code></td>
                             <td><span class="tag-pill">Tailored</span></td>
-                            <td>XYZ Formula Applied</td>
+                            <td>XYZ Reframing Complete</td>
                         </tr>
                         <tr>
                             <td><strong>HTML Template</strong></td>
                             <td><code>templates/v2-modern.html</code></td>
                             <td><span class="tag-pill">Built</span></td>
-                            <td>DS Foundations Compliant</td>
+                            <td>v2-modern Editorial Layout</td>
                         </tr>
                         <tr>
                             <td><strong>PDF Export</strong></td>
-                            <td><code>output/sample-cv.pdf</code></td>
+                            <td><code>output/sample-v2-modern.pdf</code></td>
                             <td><span class="tag-pill">Exported</span></td>
-                            <td>Strict 2-Page Verified</td>
+                            <td><strong>Exactly 2 Pages</strong> (2560px height)</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
+
+            <!-- FOOTER -->
+            <footer class="flex items-center justify-between text-[22px] text-[#4E4B66] pt-[20px] pb-[30px] border-t border-[#000000]">
+                <div>Demo Candidate: <strong>Alex Mercer</strong> · Senior UX/UI Designer</div>
+                <div>Open-CV Pipeline Audit System · All Files Generated</div>
+            </footer>
+
         </div>
     </div>
+
 </body>
 </html>
