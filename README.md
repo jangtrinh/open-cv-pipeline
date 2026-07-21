@@ -20,7 +20,7 @@
 ### 1. Installation
 
 ```bash
-git clone https://github.com/your-username/open-cv-pipeline.git
+git clone https://github.com/jangtrinh/open-cv-pipeline.git
 cd open-cv-pipeline
 npm install
 npx playwright install chromium
