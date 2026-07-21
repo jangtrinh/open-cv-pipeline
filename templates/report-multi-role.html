@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Role Application & Strategy Report — Alex Mercer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/din-condensed" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+        
+        :root {
+            --sf-rounded: ui-rounded, 'SF Pro Rounded', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+            --font-din: 'DIN Condensed', 'Impact', sans-serif;
+        }
+
+        body {
+            font-family: var(--sf-rounded);
+            -webkit-font-smoothing: antialiased;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .font-din { font-family: var(--font-din); }
+        .lh-67 { line-height: 67px; }
+        .lh-36 { line-height: 36px; }
+
+        .metric-card { text-align: center; padding: 16px 0; }
+        .metric-value { font-family: var(--font-din); font-size: 44px; font-weight: 700; line-height: 1; letter-spacing: 1px; }
+        .metric-label { font-size: 17px; opacity: 0.7; margin-top: 6px; }
+
+        .border-card { border: 2px solid #000000; padding: 24px; background: #ffffff; }
+        .left-accent-card { border-left: 4px solid #000000; border-top: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; padding: 24px; background: #ffffff; }
+
+        .fit-bar-bg { width: 100%; height: 6px; background: #e0e0e0; margin-top: 8px; }
+        .fit-bar-fill { height: 100%; background: #000000; }
+
+        .ds-table { width: 100%; border-collapse: collapse; border: 2px solid #000000; }
+        .ds-table th { background: #000000; color: #ffffff; font-family: var(--font-din); font-size: 26px; font-weight: 700; text-transform: uppercase; padding: 14px 20px; text-align: left; }
+        .ds-table td { border-bottom: 1px solid #e0e0e0; padding: 16px 20px; font-size: 22px; color: #000000; }
+        .ds-table tr:last-child td { border-bottom: none; }
+
+        .tag-pill { display: inline-block; border: 2px solid #000000; padding: 4px 12px; font-size: 18px; font-weight: 600; text-transform: uppercase; margin-right: 8px; margin-bottom: 8px; }
+
+        @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+    </style>
+</head>
+<body class="w-full min-h-screen">
+
+    <div class="w-full max-w-[1811px] mx-auto overflow-hidden bg-[#ffffff]">
+        
+        <!-- HEADER -->
+        <header class="w-full bg-[#000000] px-[73px] py-[45px]">
+            <div class="flex items-end justify-between">
+                <div>
+                    <h1 class="text-[#ffffff] text-[56px] font-[700] tracking-wide font-din uppercase lh-67" style="line-height: 1;">MULTI-ROLE APPLICATION & TAILORING REPORT</h1>
+                    <h2 class="text-[#ffffff] text-[30px] font-[400] lh-36 mt-[10px] opacity-90">Demo Candidate: Alex Mercer · Senior Product Specialist</h2>
+                </div>
+                <div class="text-right">
+                    <span class="text-[#ffffff] text-[24px] font-[400] block">Target Batch: Q3 2026 Applications</span>
+                    <span class="text-[#ffffff] text-[20px] font-[400] opacity-70 block mt-[4px]">Open-CV Pipeline Multi-Role Matcher</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- METRICS BANNER -->
+        <div class="w-full bg-[#000000] px-[73px] pt-[5px] pb-[35px]">
+            <div class="grid grid-cols-5 gap-[20px] border-t border-[#333333] pt-[25px]">
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">3 ROLES</div>
+                    <div class="metric-label text-[#ffffff]">Target Track Variants</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">95% AVG</div>
+                    <div class="metric-label text-[#ffffff]">Role Fit Match Score</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">10+ YRS</div>
+                    <div class="metric-label text-[#ffffff]">Total Experience</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">6 PDFS</div>
+                    <div class="metric-label text-[#ffffff]">2-Page Verified Variants</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">100%</div>
+                    <div class="metric-label text-[#ffffff]">DS Foundations Pass</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REPORT BODY -->
+        <div class="px-[73px] py-[50px] flex flex-col gap-[50px]">
+
+            <!-- SUMMARY SECTION -->
+            <section class="border-b border-[#000000] pb-[40px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67 mb-[15px]">APPLICATION STRATEGY SUMMARY</h3>
+                <p class="text-[28px] font-[400] leading-[42px] max-w-[1650px] text-[#000000]">
+                    Multi-role tailoring strategy for Alex Mercer across 3 key tracks: Principal Product Designer, AI Product Manager, and Design Systems Architect. Experience bullets are dynamically reframed using domain-specific FAANG power verbs and specialized metric banners to maximize role alignment.
+                </p>
+            </section>
+
+            <!-- ROLE ANALYSIS CARDS GRID -->
+            <section class="flex flex-col gap-[30px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">TARGET ROLE MATCHING & FIT SCORES</h3>
+
+                <div class="grid grid-cols-3 gap-[30px]">
+                    
+                    <!-- ROLE 1 -->
+                    <div class="border-card">
+                        <div class="flex items-center justify-between border-b border-[#000000] pb-[12px] mb-[15px]">
+                            <h4 class="font-din text-[32px] font-[700] uppercase">1. PRINCIPAL PRODUCT DESIGNER</h4>
+                            <span class="tag-pill">96% FIT</span>
+                        </div>
+                        <div class="fit-bar-bg mb-[20px]"><div class="fit-bar-fill" style="width: 96%;"></div></div>
+                        <ul class="flex flex-col gap-[10px] text-[22px] text-[#4E4B66]">
+                            <li>✓ <strong>Key Lens:</strong> Design Craft, System Architecture & Mentorship.</li>
+                            <li>✓ <strong>Highlight:</strong> 60+ token component library across 4 surfaces.</li>
+                            <li>✓ <strong>Reframing:</strong> Elevate visual excellence & dev handoff velocity.</li>
+                        </ul>
+                    </div>
+
+                    <!-- ROLE 2 -->
+                    <div class="border-card">
+                        <div class="flex items-center justify-between border-b border-[#000000] pb-[12px] mb-[15px]">
+                            <h4 class="font-din text-[32px] font-[700] uppercase">2. AI PRODUCT MANAGER</h4>
+                            <span class="tag-pill">94% FIT</span>
+                        </div>
+                        <div class="fit-bar-bg mb-[20px]"><div class="fit-bar-fill" style="width: 94%;"></div></div>
+                        <ul class="flex flex-col gap-[10px] text-[22px] text-[#4E4B66]">
+                            <li>✓ <strong>Key Lens:</strong> Product Roadmaps, AI Agents & Conversion metrics.</li>
+                            <li>✓ <strong>Highlight:</strong> POS & E-commerce checkout optimization.</li>
+                            <li>✓ <strong>Reframing:</strong> Focus on user growth, funnel steps, & ROI logic.</li>
+                        </ul>
+                    </div>
+
+                    <!-- ROLE 3 -->
+                    <div class="border-card">
+                        <div class="flex items-center justify-between border-b border-[#000000] pb-[12px] mb-[15px]">
+                            <h4 class="font-din text-[32px] font-[700] uppercase">3. DESIGN SYSTEMS LEAD</h4>
+                            <span class="tag-pill">95% FIT</span>
+                        </div>
+                        <div class="fit-bar-bg mb-[20px]"><div class="fit-bar-fill" style="width: 95%;"></div></div>
+                        <ul class="flex flex-col gap-[10px] text-[22px] text-[#4E4B66]">
+                            <li>✓ <strong>Key Lens:</strong> Token Architecture, Figma Libraries & Governance.</li>
+                            <li>✓ <strong>Highlight:</strong> Multi-tenant POS & BMS component standardization.</li>
+                            <li>✓ <strong>Reframing:</strong> Standardize cross-platform consistency & tokens.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- TAILORING STRATEGY TABLE -->
+            <section class="flex flex-col gap-[25px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">CROSS-ROLE TAILORING MATRIX</h3>
+                
+                <table class="ds-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Role Track</th>
+                            <th style="width: 35%;">Core Positioning Lens</th>
+                            <th style="width: 40%;">Primary Tailored Accomplishment Bullet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Principal Product Designer</strong></td>
+                            <td>Design Systems, UI Craft, Team Guidance</td>
+                            <td><strong>Architected & standardized cross-platform Design System</strong> (60+ component tokens), eliminating visual debt across 4 surfaces.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Product Manager</strong></td>
+                            <td>Product Strategy, Funnel Metrics, AI Deployment</td>
+                            <td><strong>Spearheaded core checkout & transaction UX redesign</strong>, streamlining multi-platform user journeys across 1M+ active users.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Design Systems Lead</strong></td>
+                            <td>Tokens Architecture, Governance, Handoff</td>
+                            <td><strong>Engineered multi-tenant Figma token hierarchy</strong>, establishing cross-functional handoff specs for 3 developer pods.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- CROSS-ROLE DIFFERENTIATORS -->
+            <section class="flex flex-col gap-[25px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">CANDIDATE CROSS-ROLE DIFFERENTIATORS</h3>
+                
+                <div class="grid grid-cols-3 gap-[30px]">
+                    <div class="left-accent-card">
+                        <h4 class="text-[26px] font-[700] mb-[8px]">1. Multi-Surface Mastery</h4>
+                        <p class="text-[22px] text-[#4E4B66]">Experience delivering unified user interfaces across Mobile, Tablet, Web, and POS Admin interfaces.</p>
+                    </div>
+                    <div class="left-accent-card">
+                        <h4 class="text-[26px] font-[700] mb-[8px]">2. System Standardization</h4>
+                        <p class="text-[22px] text-[#4E4B66]">Proven ability to create component-based design systems that scale engineering velocity and maintain brand fidelity.</p>
+                    </div>
+                    <div class="left-accent-card">
+                        <h4 class="text-[26px] font-[700] mb-[8px]">3. Strategic Business Alignment</h4>
+                        <p class="text-[22px] text-[#4E4B66]">Bridges technical developer requirements with high-level user acquisition and conversion outcomes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FILE REGISTRY TABLE -->
+            <section class="flex flex-col gap-[25px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">APPLICATION VARIANT ASSET REGISTRY</h3>
+                
+                <table class="ds-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Role Variant</th>
+                            <th style="width: 35%;">Markdown Source</th>
+                            <th style="width: 20%;">HTML Template</th>
+                            <th style="width: 20%;">PDF Output</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Principal Product Designer</strong></td>
+                            <td><code>CV-md/AlexMercer_Product_Designer.md</code></td>
+                            <td><code>templates/v2-modern.html</code></td>
+                            <td><span class="tag-pill">2 Pages Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Product Manager</strong></td>
+                            <td><code>CV-md/AlexMercer_AI_Product_Manager.md</code></td>
+                            <td><code>templates/v2-modern.html</code></td>
+                            <td><span class="tag-pill">2 Pages Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Design Systems Lead</strong></td>
+                            <td><code>CV-md/AlexMercer_Design_Systems_Lead.md</code></td>
+                            <td><code>templates/v1-classic.html</code></td>
+                            <td><span class="tag-pill">2 Pages Pass</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="flex items-center justify-between text-[22px] text-[#4E4B66] pt-[20px] pb-[30px] border-t border-[#000000]">
+                <div>Demo Candidate: <strong>Alex Mercer</strong> · Senior Product Specialist</div>
+                <div>Open-CV Pipeline Multi-Role Matching Engine · All Files Generated</div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>

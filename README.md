@@ -14,14 +14,21 @@ High-contrast monochrome typography with DIN Condensed headings, 5-col scope imp
 
 ---
 
-### 2. Application Audit & Diagnostic Report (`report.html`)
+### 2. Resume Audit & Transformation Report (`report.html`)
 Automated diagnostic report tracking candidate positioning scores, XYZ bullet transformation matrices, and asset verification.
 
 ![Audit Report Demo](assets/demo-report.png)
 
 ---
 
-### 3. Alternative Classic Layout (`v1-classic.html`)
+### 3. Multi-Role Matching & Application Strategy Report (`report-multi-role.html`)
+Evaluates candidate fit scores across multiple role tracks (e.g., Principal Designer, Product Manager, Design Systems Lead) with tailoring strategy matrices.
+
+![Multi-Role Report Demo](assets/demo-report-multi-role.png)
+
+---
+
+### 4. Alternative Classic Layout (`v1-classic.html`)
 2-column layout designed for dense technical backgrounds.
 
 ![Classic CV Demo](assets/demo-cv-v1-classic.png)

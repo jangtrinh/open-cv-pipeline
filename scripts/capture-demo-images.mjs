@@ -12,6 +12,7 @@ const TEMPLATES_DIR = resolve(ROOT, 'templates');
 const captures = [
   { html: resolve(TEMPLATES_DIR, 'v2-modern.html'), out: 'demo-cv-v2-modern.png', width: 1811, height: 1280 },
   { html: resolve(TEMPLATES_DIR, 'report.html'), out: 'demo-report.png', width: 1811, height: 1280 },
+  { html: resolve(TEMPLATES_DIR, 'report-multi-role.html'), out: 'demo-report-multi-role.png', width: 1811, height: 1280 },
   { html: resolve(TEMPLATES_DIR, 'v1-classic.html'), out: 'demo-cv-v1-classic.png', width: 1811, height: 1280 }
 ];
 
