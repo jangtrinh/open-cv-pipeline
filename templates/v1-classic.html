@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Name — Classic CV Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/din-condensed" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+        :root {
+            --sf-rounded: ui-rounded, 'SF Pro Rounded', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+            --font-din: 'DIN Condensed', 'Impact', sans-serif;
+        }
+        body { font-family: var(--sf-rounded); background-color: #ffffff; margin: 0; padding: 0; }
+        .font-din { font-family: var(--font-din); }
+        @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+    </style>
+</head>
+<body class="w-full min-h-screen">
+    <div class="w-full max-w-[1811px] mx-auto bg-[#ffffff]">
+        <!-- 2-COLUMN CLASSIC LAYOUT -->
+        <header class="w-full bg-[#000000] px-[73px] py-[40px] text-white flex justify-between items-center">
+            <div>
+                <h1 class="text-[52px] font-din uppercase font-bold">CANDIDATE NAME</h1>
+                <h2 class="text-[26px] opacity-90">Senior UX/UI Designer</h2>
+            </div>
+            <div class="text-right text-[22px]">
+                <div>linkedin.com/in/candidate</div>
+                <div>candidate@example.com</div>
+            </div>
+        </header>
+
+        <div class="px-[73px] py-[40px] grid grid-cols-12 gap-[40px]">
+            <!-- LEFT COLUMN -->
+            <div class="col-span-8 flex flex-col gap-[30px]">
+                <section>
+                    <h3 class="text-[44px] font-din font-bold uppercase border-b-2 border-black pb-2 mb-4">EXPERIENCE</h3>
+                    <div class="flex flex-col gap-6 text-[24px]">
+                        <div>
+                            <div class="font-bold text-[28px]">Company A — Senior Designer</div>
+                            <div class="text-[#4E4B66] mb-2">2023 – Present</div>
+                            <ul class="list-disc list-inside flex flex-col gap-2">
+                                <li>Spearheaded design system architecture across web and mobile.</li>
+                                <li>Optimized conversion funnel, increasing completion rate.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-span-4 flex flex-col gap-[30px] border-l border-gray-200 pl-8">
+                <section>
+                    <h3 class="text-[36px] font-din font-bold uppercase border-b-2 border-black pb-2 mb-4">SKILLS</h3>
+                    <div class="text-[22px] leading-relaxed">
+                        UX Architecture, Design Systems, Figma, User Research, Prototyping, Agile.
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="text-[36px] font-din font-bold uppercase border-b-2 border-black pb-2 mb-4">EDUCATION</h3>
+                    <div class="text-[22px]">
+                        <div class="font-bold">BSc Computer Science</div>
+                        <div class="text-[#4E4B66]">University Name</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

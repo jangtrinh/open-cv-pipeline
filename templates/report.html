@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Audit Report — Candidate Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/din-condensed" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+        :root {
+            --sf-rounded: ui-rounded, 'SF Pro Rounded', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+            --font-din: 'DIN Condensed', 'Impact', sans-serif;
+        }
+        body { font-family: var(--sf-rounded); background-color: #ffffff; color: #000000; margin: 0; padding: 0; }
+        .font-din { font-family: var(--font-din); }
+        .border-card { border: 2px solid #000000; padding: 24px; background: #ffffff; }
+        .ds-table { width: 100%; border-collapse: collapse; border: 2px solid #000000; }
+        .ds-table th { background: #000000; color: #ffffff; font-family: var(--font-din); font-size: 26px; font-weight: 700; text-transform: uppercase; padding: 14px 20px; text-align: left; }
+        .ds-table td { border-bottom: 1px solid #e0e0e0; padding: 16px 20px; font-size: 22px; }
+        .tag-pill { display: inline-block; border: 2px solid #000000; padding: 4px 12px; font-size: 18px; font-weight: 600; text-transform: uppercase; }
+        @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+    </style>
+</head>
+<body class="w-full min-h-screen">
+    <div class="w-full max-w-[1811px] mx-auto bg-[#ffffff]">
+        <header class="w-full bg-[#000000] px-[73px] py-[45px] text-white flex justify-between items-end">
+            <div>
+                <h1 class="text-[56px] font-din font-bold uppercase" style="line-height:1;">CV AUDIT & TRANSFORMATION REPORT</h1>
+                <h2 class="text-[30px] opacity-90 mt-2">Candidate: Firstname Lastname · Senior Product Designer</h2>
+            </div>
+            <div class="text-right text-[24px]">
+                <div>Audit Date: July 2026</div>
+                <div class="opacity-70 text-[20px]">Open-CV Pipeline Audit System</div>
+            </div>
+        </header>
+
+        <div class="px-[73px] py-[50px] flex flex-col gap-[50px]">
+            <section class="border-b border-[#000000] pb-[40px]">
+                <h3 class="font-din text-[56px] font-bold uppercase mb-4">EXECUTIVE SUMMARY</h3>
+                <p class="text-[28px] leading-[42px]">
+                    Analysis of candidate positioning, key weaknesses resolved, and quantitative/qualitative transformation applied via the 5-phase CV pipeline.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="font-din text-[56px] font-bold uppercase mb-6">GENERATED ASSET REGISTRY</h3>
+                <table class="ds-table">
+                    <thead>
+                        <tr>
+                            <th>Asset Type</th>
+                            <th>File Location</th>
+                            <th>Status</th>
+                            <th>Verification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Markdown Source</strong></td>
+                            <td><code>templates/cv-template.md</code></td>
+                            <td><span class="tag-pill">Tailored</span></td>
+                            <td>XYZ Formula Applied</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTML Template</strong></td>
+                            <td><code>templates/v2-modern.html</code></td>
+                            <td><span class="tag-pill">Built</span></td>
+                            <td>DS Foundations Compliant</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PDF Export</strong></td>
+                            <td><code>output/sample-cv.pdf</code></td>
+                            <td><span class="tag-pill">Exported</span></td>
+                            <td>Strict 2-Page Verified</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

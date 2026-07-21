@@ -1,0 +1,25 @@
+{
+  "name": "open-cv-pipeline",
+  "version": "1.0.0",
+  "description": "5-Phase AI-Powered CV Engineering Pipeline (Research → Tailor → Build → Export → Report) with Playwright 2-Page PDF Generator and Monochrome Design System",
+  "type": "module",
+  "main": "scripts/export-pdf.mjs",
+  "scripts": {
+    "export:pdf": "node scripts/export-pdf.mjs",
+    "test": "node scripts/export-pdf.mjs"
+  },
+  "keywords": [
+    "cv-pipeline",
+    "resume-builder",
+    "playwright-pdf",
+    "design-system",
+    "ai-agent-skill",
+    "xyz-formula",
+    "faang-cv"
+  ],
+  "author": "Jang Trinh",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

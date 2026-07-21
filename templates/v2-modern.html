@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{CANDIDATE_NAME}} — {{ROLE_TITLE}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/din-condensed" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+        
+        :root {
+            --sf-rounded: ui-rounded, 'SF Pro Rounded', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+            --font-din: 'DIN Condensed', 'Impact', sans-serif;
+        }
+
+        body {
+            font-family: var(--sf-rounded);
+            -webkit-font-smoothing: antialiased;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .font-din { font-family: var(--font-din); }
+        .lh-36 { line-height: 36px; }
+        .lh-67 { line-height: 67px; }
+
+        .timeline-item { position: relative; padding-left: 36px; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #000000;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 26px;
+            width: 2px;
+            bottom: -40px;
+            background: #e0e0e0;
+        }
+        .timeline-item:last-child::after { display: none; }
+
+        .metric-card { text-align: center; padding: 16px 0; }
+        .metric-value {
+            font-family: var(--font-din);
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1px;
+        }
+        .metric-label { font-size: 17px; opacity: 0.7; margin-top: 6px; }
+        .sub-section { border-left: 3px solid #000000; padding-left: 20px; margin-top: 16px; }
+
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body class="w-full min-h-screen">
+
+    <div class="w-full max-w-[1811px] mx-auto overflow-hidden bg-[#ffffff]">
+        
+        <!-- HEADER -->
+        <header class="w-full bg-[#000000] px-[73px] py-[45px]">
+            <div class="flex items-end justify-between">
+                <div>
+                    <h1 class="text-[#ffffff] text-[56px] font-[700] tracking-wide font-din uppercase" style="line-height: 1;">FIRSTNAME LASTNAME</h1>
+                    <h2 class="text-[#ffffff] text-[30px] font-[400] lh-36 mt-[10px] opacity-90">Senior Product Designer · UX Architect</h2>
+                </div>
+                <div class="flex items-center gap-[30px]">
+                    <a href="https://linkedin.com" class="text-[#ffffff] text-[24px] font-[400] underline">linkedin.com/in/profile</a>
+                    <a href="https://portfolio.design" class="text-[#ffffff] text-[24px] font-[400] underline">portfolio.design</a>
+                    <span class="text-[#ffffff] text-[24px] font-[400]">+84 900 000 000</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- SCOPE BANNER -->
+        <div class="w-full bg-[#000000] px-[73px] pt-[5px] pb-[35px]">
+            <div class="grid grid-cols-5 gap-[20px] border-t border-[#333333] pt-[25px]">
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">10+ YRS</div>
+                    <div class="metric-label text-[#ffffff]">Design Experience</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">4 SURFACES</div>
+                    <div class="metric-label text-[#ffffff]">Mobile, Tablet, Web, Admin</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">1M+</div>
+                    <div class="metric-label text-[#ffffff]">Active Users</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">50+ TOKENS</div>
+                    <div class="metric-label text-[#ffffff]">Design System Component Library</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value text-[#ffffff]">100%</div>
+                    <div class="metric-label text-[#ffffff]">On-Time Shipping</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN BODY -->
+        <div class="px-[73px] py-[50px] flex flex-col gap-[50px]">
+
+            <section class="border-b border-[#000000] pb-[40px]">
+                <p class="text-[#000000] text-[28px] font-[400] leading-[42px] max-w-[1650px]">
+                    Versatile Product Designer specializing in multi-platform product architecture and design systems. Proven track record of architecting user-centric solutions across high-traffic digital platforms, streamlining cross-functional developer handoffs, and converting business strategy into intuitive UX experiences.
+                </p>
+            </section>
+
+            <section class="flex flex-col gap-[35px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67">WORK EXPERIENCE</h3>
+
+                <div class="flex flex-col gap-[40px]">
+                    
+                    <div class="timeline-item">
+                        <div class="flex items-baseline justify-between">
+                            <h4 class="text-[32px] font-[700] text-[#000000] lh-36">Tech Corp <span class="font-[400] text-[#4E4B66]">| Senior Product Designer</span></h4>
+                            <span class="text-[26px] font-[400] text-[#4E4B66]">2024 – Present</span>
+                        </div>
+                        <p class="text-[24px] font-[400] text-[#4E4B66] mt-[4px]">Flagship Product Ecosystem</p>
+                        
+                        <div class="sub-section">
+                            <ul class="flex flex-col gap-[12px] text-[26px] font-[400] text-[#000000] leading-[38px]">
+                                <li>• <strong>Spearheaded multi-platform UI architecture</strong> across 4 distinct surfaces to unify platform workflows.</li>
+                                <li>• <strong>Architected & standardized component Design System</strong> (50+ component variants), eliminating visual debt.</li>
+                                <li>• <strong>Optimized primary transaction flows</strong>, streamlining steps and accelerating checkout speed.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="border-t border-b border-[#000000] py-[40px]">
+                <h3 class="font-din text-[56px] font-[700] text-[#000000] uppercase tracking-wide lh-67 mb-[25px]">CORE COMPETENCIES</h3>
+                <div class="grid grid-cols-3 gap-[40px]">
+                    <div>
+                        <h4 class="text-[28px] font-[700] text-[#000000] mb-[12px]">Product & UX Architecture</h4>
+                        <p class="text-[24px] font-[400] text-[#4E4B66] leading-[36px]">UX/UI Design, Information Architecture, Wireframing, Prototyping, Usability Testing.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[28px] font-[700] text-[#000000] mb-[12px]">Design Systems</h4>
+                        <p class="text-[24px] font-[400] text-[#4E4B66] leading-[36px]">Design Tokens, Reusable Libraries, Auto-Layout, Developer Handoff Standards.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[28px] font-[700] text-[#000000] mb-[12px]">Tools & Methods</h4>
+                        <p class="text-[24px] font-[400] text-[#4E4B66] leading-[36px]">Figma, FigJam, Zeplin, Jira, Agile/Scrum Collaboration.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="flex items-start justify-between text-[24px] font-[400] text-[#4E4B66] pt-[10px] pb-[30px]">
+                <div><strong class="text-[#000000]">Product Design Program</strong> (2025)</div>
+                <div><strong class="text-[#000000]">BSc Computer Science / Design</strong></div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
